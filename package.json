@@ -2,6 +2,10 @@
   "name": "deploy-demo",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "v10.15.1",
+    "npm": "6.4.1"
+  },
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -9,13 +13,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    
-    "postinstall": "ng build --output-path testheroku-angular-app --aot --prod"
+    "deploy:gh": "ng build --prod --base-href='https://allfarizqi88.github.io/followers-app/' && ngh",
+    "postinstall": "ng build --output-path testheroku-angular-app  --aot --prod"
   },
-  "engines": {
-    "node": "v8.11.4",
-    "npm": "5.8.0"
-  },
+  
   "private": true,
   "dependencies": {
     "@angular/animations": "^4.0.0",
