@@ -14,7 +14,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy:gh": "ng build --prod --base-href='https://allfarizqi88.github.io/followers-app/' && ngh",
-    "postinstall": "ng build --output-path followers-app --aot --prod"
+    "postinstall": "ng build --output-path testheroku-angular-app --aot --prod"
   },
   "private": true,
   "dependencies": {
